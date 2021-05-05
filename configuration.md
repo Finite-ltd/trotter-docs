@@ -18,7 +18,7 @@ Next thing is to take the contract address and place it on your environment or i
 - `NFT_CONTRACT_ETH_MAINNET`    
 - `NFT_CONTRACT_BSC_MAINNET`
 
-After that you must add the network to `listedNetworks` on the `config.ts` file so the middleware picks it up when validating network on requests. Make sure you put the value to the listed network as erc721 like so    
+After that you must add the network to `listedNetworks` on the `config.ts` file so the middleware picks it up when validating network on requests. Make sure you put the value to the listed network as erc721 if you deployed the `TrotterNftErc721.sol` smart contract and erc1155 if you deployed the `TrotterNft.sol` smart contract like so    
 ```listedNetworks: { 'MATIC_MAINNET': 'erc721', ... } ```
 
 If you have followed these steps above you are good to go, just launch your Trotter instance and start calling the apis. More details of the structures and how to use apis in the next sections.
